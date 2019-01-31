@@ -1,2 +1,4 @@
-# drlnd
-Udacity Deep Reinforcement Learning Nano-Degree Projects
+# Udacity Deep Reinforcement Learning Nanodegree Projects
+## Winter 2018/2019 course
+
+**Project 1 Report: Coming soon**
