@@ -4,7 +4,7 @@
 ## Project Details
 This repo contains the Python code for training an agent to collect bananas in the [Unity Banana Collector](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#banana-collector) environment (note that my description below does not match this link, apparently things have been simplified for the course). The work here was completed as part of the first project from Udacity's [Deep Reinforcment Learning course](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893). In this project, I used [PyTorch](https://pytorch.org/) to train a deep neural network to carry out [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning).
 
-This first project requires the students to develop and train a [Deep Q-Network (DQN)](https://deepmind.com/research/dqn/) model to collect yellow bananas, while avoiding purple bananas, in a simulated environment. I'm not great at creating animated graphics, so (here)[https://www.youtube.com/watch?v=m7aOodyDlkk] is a Youtube video of an agent interacting with the environment.
+This first project requires the students to develop and train a [Deep Q-Network (DQN)](https://deepmind.com/research/dqn/) model to collect yellow bananas, while avoiding purple bananas, in a simulated environment. I'm not great at creating animated graphics, so [here](https://www.youtube.com/watch?v=m7aOodyDlkk) is a Youtube video of an agent interacting with the environment.
 
 The project report, including model details, hyperparameters, etc., is available [here](https://github.com/donaldmusgrove/drlnd/blob/master/project1/report.md).
 
@@ -25,12 +25,13 @@ The project requires that in order to consider the problem solved, the agent mus
 
 ## Getting Started
 To run my code, you will need to set up the Unity environment. Here are steps to help you along.
-###Step 1: Clone the Deep Reinforcement Learning Nanodegree (DRLND) Repository
-First, follow the instructions [here](https://github.com/udacity/deep-reinforcement-learning#dependencies). The instructions have you set-up a new Python environment, install [OpenAI Gym](https://github.com/openai/gym), the [Classic Control](https://github.com/openai/gym#classic-control) environment, and box2d. The instructions for installing box2d are non-existent at the OpenAI repo, I suggest you build from source using the instructions [here](https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md_. 
+
+### Step 1: Clone the Deep Reinforcement Learning Nanodegree (DRLND) Repository
+First, follow the instructions [here](https://github.com/udacity/deep-reinforcement-learning#dependencies). The instructions have you set-up a new Python environment, install [OpenAI Gym](https://github.com/openai/gym), the [Classic Control](https://github.com/openai/gym#classic-control) environment, and box2d. The instructions for installing box2d are non-existent at the OpenAI repo, I suggest you build from source using the instructions [here](https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md). 
 
 Using the linked instructions, you will install PyTorch, the ML-Agents toolkit, and a few more Python packages required to use my Jupyter Notebook file.
 
-###Step 2: Download the Unity Environment
+### Step 2: Download the Unity Environment
 You need the Udacity version of the environment. Doesnload the Unity environment that matches your operating systemL
 * Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 * Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
