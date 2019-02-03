@@ -32,18 +32,17 @@ First, follow the instructions [here](https://github.com/udacity/deep-reinforcem
 Using the linked instructions, you will install PyTorch, the ML-Agents toolkit, and a few more Python packages required to use my Jupyter Notebook file.
 
 ### Step 2: Download the Unity Environment
-You need the Udacity version of the environment. Doesnload the Unity environment that matches your operating systemL
+You need the Udacity version of the environment. Download the Unity environment that matches your operating system:
 * Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 * Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
 * Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
 * Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
-I completed this project using the Windows (64-bit) version, thus the contents of this repo reflects that operating system.
+I completed this project using the Windows (64-bit) version, thus the contents of this repo reflect that operating system choice.
 
 
 ## Instructions
-After you have followed the instructions above, open my [Navigation.ipynb](https://github.com/donaldmusgrove/drlnd/blob/master/project1/Navigation.ipynb) in Jupyter Notebook. I have included step-by-step instructions and some explanations with what is going on in each cell. Be sure that you select the correct kernel!
+After you have followed the instructions above, open my [Navigation.ipynb](https://github.com/donaldmusgrove/drlnd/blob/master/project1/Navigation.ipynb) in Jupyter Notebook. I have included step-by-step instructions and some explanations with what is going on in each cell. Be sure that you select the drlnd kernel!
 
-Section 4 of [Navigation.ipynb](https://github.com/donaldmusgrove/drlnd/blob/master/project1/Navigation.ipynb) includes the code for training the agent using the DQN (see bleep for more info on the DQN used). Section 5 loads the weights for the agent's DQN and runs through a single episode.
-
+Section 4 of [Navigation.ipynb](https://github.com/donaldmusgrove/drlnd/blob/master/project1/Navigation.ipynb) includes the code for training the agent using the DQN (see [the report](https://github.com/donaldmusgrove/drlnd/blob/master/project1/report.md) for more info on the DQN used). Section 5 loads pre-saved weights for the agent's DQN and runs through a single episode.
 
