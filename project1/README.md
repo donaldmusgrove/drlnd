@@ -4,9 +4,9 @@
 ## Project Details
 This repo contains the Python code for training an agent to collect bananas in the [Unity Banana Collector](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#banana-collector) environment (note that my description below does not match this link, apparently things have been simplified for the course). The work here was completed as part of the first project from Udacity's [Deep Reinforcment Learning course](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893). In this project, I used [PyTorch](https://pytorch.org/) to train a deep neural network to carry out [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning).
 
-This first project requires the students to develop and train a [Deep Q-Network (DQN)](https://deepmind.com/research/dqn/) model to collect yellow bananas, while avoiding purple bananas, in a simulated environment. I'm not great at creating animated graphics, so [here](https://www.youtube.com/watch?v=m7aOodyDlkk) is a Youtube video of an agent interacting with the environment.
+This first project requires the students to develop and train a [Deep Q-Network (DQN)](https://deepmind.com/research/dqn/) model to collect yellow bananas, while avoiding purple bananas, in a simulated environment. [Here](https://www.youtube.com/watch?v=m7aOodyDlkk) is a Youtube video of an agent interacting with the environment.
 
-The project report, including model details, hyperparameters, etc., is available [here](https://github.com/donaldmusgrove/drlnd/blob/master/project1/report.md).
+The project report, including model details, hyperparameters, etc., is available [here](https://github.com/donaldmusgrove/drlnd/blob/master/project1/report.md). My Jupyter Notebook implementation, with all cells executed, is available [here](https://github.com/donaldmusgrove/drlnd/blob/master/project1/Navigation.ipynb).
 
 
 ### Banana Collector Environment Details

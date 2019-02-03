@@ -22,9 +22,9 @@ The Banana Collection problem is presented as an episodic task. It's not clear f
 To solve the Banana Collection task, I implemented Q-learning via a deep Q network (DQN), with a target network and an experience replay buffer. I used a target network variant called [Double DQN learning](https://arxiv.org/pdf/1509.06461.pdf). Details of each of these methods, along with hyperparameters used, are given below.
 
 ### Deep Q Network
-My deep Q network takes as input the 37-vector of states and outputs a 4-vector of expected rewards corresponding to each action. 
+My DQN takes as input the 37-vector of states and outputs a 4-vector of expected rewards corresponding to each action. 
 
-The deep Q network I used consists of a neural network with 3 dense layers. The first layer takes as input the states and has 64 nodes. The second layer takes as input the output of the first layer and has 64 nodes as well. The 3rd and final layer takes as input the second layer and has 4 nodes. The first and second layers have ReLU activation functions while the final layer has a linear activation function. The deep Q network was implemented using [PyTorch](https://pytorch.org/).
+The DQN I used consists of a neural network with 3 dense layers. The first layer takes as input the states and has 64 nodes. The second layer takes as input the output of the first layer and has 64 nodes as well. The 3rd and final layer takes as input the output of the second layer and has 4 nodes. The first and second layers have ReLU activation functions while the final layer has a linear activation function. The DQN was implemented using [PyTorch](https://pytorch.org/).
 
 ### Target Network
 Two networks were used during training, a local network and a target network. The local network is used to take actions and is updated after every time step. The target network is updated with the weights of the local network at a uniform interval. The model loss function is then the mean squared error (MSE) between the local and target network outputs. In my implementation, the target network is updated every 4 steps.
@@ -45,13 +45,12 @@ This is a very simple modification that results in the Banana Collector solving 
 ### Hyperparameters
 Q-Network
 
-* 3 hidden layers
 * First layer input size: 37
-* Nodes: (64, 64, 4)
+* 3 hidden layers with nodes 64, 64, and 4
 * Loss function: MSE
 * Optimizer: Adam
 * Learning rate: 0.0005
-* Soft updated parameter: 0.001
+* Soft update parameter (tau): 0.001
 
 Experience Replay Buffer
 
@@ -77,10 +76,10 @@ The following plot illustrates the evolution of the agent's score over the train
 
 
 ## Ideas for Future Work
-There are several methods for improving the agent's performance. Here are two methods that would likely lead to improvements:
+There are several methods for enhancing the agent's performance. Here are two methods that would likely lead to improvements:
 
-1. Training using the pixels. Instead of relying on a 37-vector representation of the state space, we could instead use the actual 2D pixel images directly. The current state of the art would be then to replace the dense layers of my DQN with several and successive 2D convolution layers.
+1. Training using the pixels. Instead of relying on a 37-vector representation of the state space, we could instead use the actual 2D pixel images directly. The current state of the art would be then to replace the dense layers of my DQN with several and successive 2D [convolution layers](https://en.wikipedia.org/wiki/Convolutional_neural_network).
 
-2. [Prioritized experience replay](https://arxiv.org/abs/1511.05952). Switching the uniform sampling of the replay buffer to some principled weighted sampling scheme could improve performance and efficiency, i.e., requiring less training episodes. The sampling weight could be computed as a function of the training error; high error for certain experiences suggest that we're taking poor actions and thus ought to prioritize these experiences. When training error is low for other experiences, we're pretty good at making decisions and thus we can de-prioritize these experiences.
+2. [Prioritized experience replay](https://arxiv.org/abs/1511.05952). Switching the uniform sampling of the replay buffer to some principled weighted sampling scheme could improve performance and efficiency, e.g., fewer training episodes. The sampling weight could be computed as a function of the training error; high error for certain experiences suggest that we're taking poor actions and thus ought to prioritize these experiences. When training error is low for other experiences, we're pretty good at making decisions and thus we can de-prioritize these experiences.
 
 
